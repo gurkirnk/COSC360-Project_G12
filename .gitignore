@@ -1,0 +1,27 @@
+# This is from a random template online
+# We can add to it as needed 
+
+# Dependency directories
+node_modules/
+# Optional npm cache directory
+.npm
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# Environment variables
+.env
+.env.local
+
+# Build artifacts
+build/
+dist/
+public/build/
+
+# OS and editor files
+.DS_Store           # macOS
+.idea/              # JetBrains IDEs
+.vscode/            # VS Code (optional, if you want to ignore workspace settings)
+Thumbs.db           # Windows
