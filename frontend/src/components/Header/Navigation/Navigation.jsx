@@ -1,13 +1,12 @@
 import './Navigation.css';
+import { NavLink } from 'react-router-dom';
 
 export default function Navigation() {
   return (
     <nav className="main-navigation" aria-label="main navigation">
       <ul className="main-navigation-list">
-        <li className="main-navigation-item"><a href="/">Home</a></li>
-        <li className="main-navigation-item"><a href="/books/list">Make A Listing</a></li>
-        <li className="main-navigation-item"><a href="/books">Browse</a></li>
-        <li className="main-navigation-item"><a href="/contact">Account</a></li>
+        <li className="main-navigation-item"><NavLink to="/">Home</NavLink></li>
+        <li className="main-navigation-item"><NavLink to="/browse">Browse</NavLink></li>
       </ul>
     </nav>
   );

@@ -1,23 +1,8 @@
-import * as React from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import './Breadcrumbs.css';
 
 export default function Breadcrumbs() {
-  // initalize pathname state with current location
-  const [pathname, setPathname] = React.useState(window.location.pathname);
-
-  // update pathname state on browser navigation events - learned these from googling stuff about how to automatically do breadcrumbs in react
-  React.useEffect(() => {
-    function updatePathname() {
-      setPathname(window.location.pathname);
-    }
-    window.addEventListener('popstate', updatePathname);
-    window.addEventListener('hashchange', updatePathname);
-
-    return () => {
-      window.removeEventListener('popstate', updatePathname);
-      window.removeEventListener('hashchange', updatePathname);
-    };
-  }, []);
+  const { pathname } = useLocation();
 
 
 // put the home at the start of the pathnames array so it is always present in the breadcrumbs
@@ -39,7 +24,7 @@ export default function Breadcrumbs() {
                 <span className="crumb-label">{name}</span>
               ) : (
                 <div>
-                <a className="crumb-label" href={routeTo}>{name}</a>
+                <Link className="crumb-label" to={routeTo}>{name}</Link>
                 <span className="separator">
                   &gt;
                 </span>
