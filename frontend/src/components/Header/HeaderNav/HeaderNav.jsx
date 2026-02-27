@@ -1,8 +1,8 @@
 import RegistrationSwitcher from '../../RegistrationSwitcher/RegistrationSwitcher';
-import './Navigation.css';
+import './HeaderNav.css';
 import { NavLink } from 'react-router-dom';
 
-export default function Navigation() {
+export default function HeaderNav() {
   return (
     <nav className="main-navigation" aria-label="main navigation">
       <RegistrationSwitcher
