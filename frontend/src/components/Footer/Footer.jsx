@@ -1,5 +1,4 @@
-import { Link, useLocation } from 'react-router-dom';
-import '.Footer.css';
+import './Footer.css';
 
 export default function Footer(){
     return(
@@ -10,5 +9,5 @@ export default function Footer(){
             <p><a href="/browse?genre=romance">Romance</a></p>
             <p><a href="/browse?genre=scifi">Science Fiction</a></p>
         </footer>
-    )
+    );
 }

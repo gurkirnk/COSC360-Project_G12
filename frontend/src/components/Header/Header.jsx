@@ -1,5 +1,5 @@
 import Breadcrumbs from "./Breadcrumbs/Breadcrumbs";
-import Navigation from "./Navigation/Navigation";
+import Navigation from "./HeaderNav/HeaderNav";
 import "./Header.css";
 
 export default function Header() {

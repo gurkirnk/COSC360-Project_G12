@@ -1,4 +1,4 @@
-import './Navigation.css';
+import './HeaderNav.css';
 import { NavLink } from 'react-router-dom';
 
 export default function Navigation() {
