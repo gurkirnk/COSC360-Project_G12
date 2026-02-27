@@ -4,10 +4,8 @@ import './Breadcrumbs.css';
 export default function Breadcrumbs() {
   const { pathname } = useLocation();
 
-
 // put the home at the start of the pathnames array so it is always present in the breadcrumbs
   const pathnames = ['home', ...pathname.split('/').filter(x => x)];
-
 
   return (
     <nav className="breadcrumbs">
